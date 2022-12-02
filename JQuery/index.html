@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="readyDemo">
+
+    </div>
+    <p>List-1</p>
+    <ul>
+        <li id="first-li">
+            <a href="">Outside</a>
+            <div>
+                <a id="inside-a-div" href="">Inside</a>
+            </div>
+        </li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+
+
+
+
+    <style>
+        #readyDemo{
+            font-size: 20px;
+            
+        }
+    </style>
+
+    <script src="jQuery.js"></script>
+    <script>
+        $(document).ready(function(){
+            //console.log("Documnet is ready")
+            $('#readyDemo').text("Webpage is ready").css('color','green').css('font-size',50).fadeIn(5000);
+
+        });
+        //function can contain object on top of them
+        // console.log($); //Dollar($) is object and function also object in jquery 
+        // console.log(jQuery);
+    </script>
+
+</body>
+</html>
